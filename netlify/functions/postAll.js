@@ -3,7 +3,6 @@ let {conn} = require('./db')
 // Reference: https://docs.netlify.com/functions/build-with-javascript/#synchronous-function-format
 exports.handler = async function (event, context) {
   context.callbackWaitsForEmptyEventLoop = false;
-  console.log(event, 11111111111111111111111)
   const connection = await conn();
   try {
     if (event.httpMethod === "GET") {

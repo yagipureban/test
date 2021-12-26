@@ -4,7 +4,6 @@ const uri = "mongodb+srv://s1155171310:1qaz2wsx@cluster0.hxaov.mongodb.net/my_as
 
 exports.conn = async function () {
   let connection = await mongoose.createConnection(uri);
-
   const postSchema = new mongoose.Schema({
     title: String,
     description: String,
