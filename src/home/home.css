@@ -1,0 +1,72 @@
+.home {
+}
+
+.banner {
+  width: 100vw;
+  min-width: 1200px;
+  height: 300px;
+  background: url("../static/banner.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.banner p {
+  font-size: 18px;
+  text-align: center;
+  color: #5e5e5e;
+  line-height: 60px;
+}
+
+.posts-list {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 1200px;
+  min-height: 500px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 8px 0px #81817a;
+}
+.posts-list:hover {
+  box-shadow: 2px 2px 15px 0px #81817a;
+}
+
+.posts-list .posts-item {
+  padding: 15px 0;
+  border-bottom: 1px dashed #ccc;
+  transition: all 0.5s;
+}
+.posts-list .posts-item:hover {
+  cursor: pointer;
+}
+.posts-list .posts-item:hover .posts-title {
+  color: #06f;
+  font-size: 19px;
+}
+
+.posts-list .posts-item .posts-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+.posts-list .posts-item .posts-title .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.posts-list .posts-item .posts-title .time{
+  width: 250px;
+  font-size: 14px;
+}
+.posts-list .posts-item .posts-cont {
+  height: 30px;
+  margin-top: 15px;
+  font-size: 15px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
