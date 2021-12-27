@@ -24,7 +24,7 @@ function InitDetail () {
     <div className="posts-detail">
       <h1 className="posts-title">
         <span className="title">{obj.title}</span>
-        <span className="time"> posted time：{obj.createTime || 'none'}</span>
+        <span className="time"> submission time：{obj.createTime || 'none'}</span>
       </h1>
       <p className="posts-content">
         {obj.contents}
