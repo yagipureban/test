@@ -71,9 +71,9 @@ function InitDetail () {
   return (
     <div className="message-board">
       <div className="message-board-left">
-        <p className="form-title">email：</p>
+        <p className="form-title">Email：</p>
         <input type="email" value={formData.email} onChange={(e) => setFormValue('email', e.target.value)} />
-        <p className="form-title">posted content：</p>
+        <p className="form-title">Post Content：</p>
         <input type="text" value={formData.message} onChange={(e) => setFormValue('message', e.target.value)} />
         <div>
           <button onClick={() => handleClick()}>submit</button>
@@ -81,7 +81,7 @@ function InitDetail () {
 
       </div>
       <div className="message-board-right">
-        <p className="message-board-right-title">the latest article</p>
+        <p className="message-board-right-title">The latest article</p>
         {
           ArticleListInit()
         }
