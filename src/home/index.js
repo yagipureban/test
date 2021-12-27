@@ -26,7 +26,7 @@ function ArticleListInit () {
     <div className="posts-item" onClick={() => handleClick(item._id)} key={index}>
       <div className="posts-title">
         <span className="title">{item.title}</span>
-        <span className="time">发布时间：{item.createTime || '暂无'}</span>
+        <span className="time">release time：{item.createTime || 'none'}</span>
       </div>
       <div className="posts-cont" title={item.description}>{item.description}</div>
     </div>

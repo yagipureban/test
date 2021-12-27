@@ -61,7 +61,7 @@ function InitDetail () {
         contents: formData.message,
         createTime: new Date().toISOString()
       });
-      alert('提交成功')
+      alert('submit successfully')
       navigate(`/index`)
       console.log(res.data.data, 'res.data.data==');
     }
@@ -71,17 +71,17 @@ function InitDetail () {
   return (
     <div className="message-board">
       <div className="message-board-left">
-        <p className="form-title">邮箱：</p>
+        <p className="form-title">email：</p>
         <input type="email" value={formData.email} onChange={(e) => setFormValue('email', e.target.value)} />
-        <p className="form-title">发布内容：</p>
+        <p className="form-title">posted content：</p>
         <input type="text" value={formData.message} onChange={(e) => setFormValue('message', e.target.value)} />
         <div>
-          <button onClick={() => handleClick()}>提交</button>
+          <button onClick={() => handleClick()}>submit</button>
         </div>
 
       </div>
       <div className="message-board-right">
-        <p className="message-board-right-title">最新文章</p>
+        <p className="message-board-right-title">the latest article</p>
         {
           ArticleListInit()
         }

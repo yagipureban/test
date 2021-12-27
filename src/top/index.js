@@ -16,8 +16,8 @@ import "./top.css"
 function Nav () {
   return (
     <div className="top">
-      <NavLink to="/index" className="link">主页</NavLink>
-      <NavLink to="/messageBoard" className="link">留言板</NavLink>
+      <NavLink to="/index" className="link">Home Page</NavLink>
+      <NavLink to="/messageBoard" className="link">Message Board</NavLink>
     </div>
 
   )
